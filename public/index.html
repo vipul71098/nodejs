@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <title></title>
+</head>
+<body ng-controller="myctrl">
+  <input type="text" ng-model="value"><br>
+  <input type="text" ng-model="value2"></br>
+  <button ng-click="send()">send</button>
+
+  <h1>WELCOME TO MONGODB</h1>
+
+  <script src="myctrl.js" charset="utf-8"></script>
+
+  <!-- <script type="text/javascript">
+  var myapp = angular.module("app",[]);
+  myapp.controller("myctrl",function($scope,$http){
+    $scope.send = function(){
+      console.log($scope.value);
+      console.log($scope.value2);
+      $http.post('/test', {'value': $scope.value}).then(
+        function(resp) {
+          console.log(resp);
+        },
+        function(errorResp) {
+          console.log(errorResp);
+        }
+      )
+
+    }
+  });//end of controller
+  </script> -->
+</body>
+</html>
